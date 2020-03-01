@@ -9,3 +9,7 @@
   input[type="radio"]{
     margin: 0 10px 0 10px;
   }
+
+  input[type="checkbox"]{
+    margin: 0 10px 0 10px;
+  }

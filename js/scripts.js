@@ -12,8 +12,9 @@ pizzaParlor.prototype.assignId = function () {
     return this.currentId;
 }
 
+//working on this prototype - trying to figure out a way to show toppings
 pizzaParlor.prototype.addToppings = function (inputtedToppings) {
-    for (i = 0; i < inputtedToppings.length; i++) {
+    for (i = 0; i <= inputtedToppings.length; i++) {
         console.log(inputtedToppings[i]);
         return $(inputtedToppings[i]).val();
     }
