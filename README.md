@@ -7,7 +7,7 @@ By _**Jesse Callahan**_</br>
 This application allows you to order a pizza with whatever toppings you choose. It then adds that order to a database and gives you the price of your pizza.
 
 ## Setup/Installation Requirements
-1) 
+1) Check out this application right [here](https://jessecallahan.github.io/pizza-parlor/)
 
 ## Specs
 
