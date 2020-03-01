@@ -1,0 +1,11 @@
+
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 33%;
+  }
+
+  input[type="radio"]{
+    margin: 0 10px 0 10px;
+  }

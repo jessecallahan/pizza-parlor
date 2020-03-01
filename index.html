@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Parlor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pizza Parlor<img width="10%" height="10%" src=" img/download.png"> </img> </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <hr>
+                <h2>Order:</h2>
+                <form id="new-order">
+                    <div class="form-group">
+                        <p>Name</p>
+                        <input type="text" class="form-control" id="new-name">
+                    </div>
+                    <div>
+                        <p>Size</p>
+                    </div>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="size" value="L" checked>Large ($20)
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="size" value="M">Medium ($15)
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="size" value="S">Small ($8)
+                    </label>
+
+                    <p>Toppings ($1 each)</p>
+                    <ul class="checkbox-grid">
+                        <li><input type="checkbox" name="toppings" value="value1" /><label for="text1">Pepperoni</label>
+                        </li>
+                        <li><input type="checkbox" name="toppings" value="value2" /><label for="text2">Sausage</label>
+                        </li>
+                        <li><input type="checkbox" name="toppings" value="value3" /><label for="text3">Canadian
+                                Bacon</label></li>
+                        <li><input type="checkbox" name="toppings" value="value4" /><label for="text4">Anchovies
+                            </label></li>
+                        <li><input type="checkbox" name="toppings" value="value5" /><label for="text5">Mushrooms</label>
+                        </li>
+                        <li><input type="checkbox" name="toppings" value="value6" /><label for="text6">Green
+                                Peppers</label></li>
+                        <li><input type="checkbox" name="toppings" value="value7" /><label for="text7">Black
+                                Olives</label>
+                        </li>
+                        <li><input type="checkbox" name="toppings" value="value8" /><label
+                                for="text8">Artichokes</label>
+                        </li>
+                        <li><input type="checkbox" name="toppings" value="value8" /><label for="text8">Pineapple</label>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <button type="submit" class="btn-primary">Complete Order</button>
+                    </div>
+                </form>
+                <hr>
+                <h2>Orders:</h2>
+                <ul id="output">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
