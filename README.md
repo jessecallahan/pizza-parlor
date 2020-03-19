@@ -17,7 +17,7 @@ Size: M
 Toppings: Pepperoni, Anchovies, Black Olives
 
 Output_
-Jesse Size M Pizza $19 
+Jesse Size M Pizza $19 Toppings: Pepperoni, Anchovies, Black Olives 
 
 ## Tools Used
 JS/CSS/HTML

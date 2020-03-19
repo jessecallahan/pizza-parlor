@@ -1,21 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Jesse Callahan's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pizza Parlor</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
+    <nav class=navy>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+                <li class="active" class="dropdown">
+                    <a href="https://jessecallahan.github.io/Jesse-Portfolio/contact.html" class="dropdown-toggle"
+                        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work.html">All Projects</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://jessecallahan.github.io/Pig-Dice/">Pig Dice</a></li>
+                        <li><a href="https://jessecallahan.github.io/Pandemic-game/">Pandemic</a></li>
+                        <li><a href="https://jessecallahan.github.io/pizza-parlor/">Pizza Parlor</a></li>
+                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/calculator.html">JS
+                                Calculator</a>
+                        </li>
+                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/color.html">Color Input</a>
+                        </li>
+                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/beep.html">Beep Boop</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
 
     <div class="container">
-        <h1>Pizza Parlor<img width="10%" height="10%" src=" img/download.png"> </img> </h1>
+        <p class="work-description bg-warning" style="margin-top: 20px"> Here is a Pizza Parlor project I created. It is
+            a basic database where all the pizza objects or "orders" get stored into an array or an "order database".
+            You
+            can check out the github <a
+                href="https://github.com/jessecallahan/Jesse-Portfolio/blob/master/readme/READMEbeep.md"
+                target="_blank">here</a>. Try making an order!</p>
         <div class="row">
             <div class="col-md-6">
+                <h1>Pizza Parlor<img width="10%" height="10%" src=" img/download.png"> </img> </h1>
                 <h2>Order:</h2>
                 <form id="new-order">
                     <div class="form-group">
@@ -36,6 +75,7 @@
                         <input type="radio" name="size" value="S">Small ($8)
                     </label>
 
+                    <br></br>
                     <p>Toppings ($1 each)</p>
                     <ul class="checkbox-grid">
                         <li><input type="checkbox" name="toppings" value=" Pepperoni" /><label
@@ -53,7 +93,7 @@
                         <li><input type="checkbox" name="toppings" value=" Green Peppers " /><label for="text6">Green
                                 Peppers</label></li>
                         <li><input type="checkbox" name="toppings" value=" Black
-                            Olives" /><label for="text7">Black
+                                Olives" /><label for="text7">Black
                                 Olives</label>
                         </li>
                         <li><input type="checkbox" name="toppings" value=" Artichokes" /><label
@@ -62,15 +102,16 @@
                         <li><input type="checkbox" name="toppings" value=" Pineapple" /><label
                                 for="text8">Pineapple</label>
                         </li>
+
                     </ul>
 
-                    <div>
-                        <button type="submit" class="btn-primary">Complete Order</button>
-                    </div>
+
+
+                    <button style="margin: 20px" type="submit" class="btn-primary">Complete Order</button>
                 </form>
                 <hr>
 
-                </ul>
+
             </div>
             <div class="col-md-6">
                 <h2>Orders:</h2>
@@ -80,5 +121,31 @@
     </div>
 
 </body>
+<div class="footer">
+    <div class="container text-center">
+        <footer>
+            <p>
+                <h3>HI.</h3>
+                I'm Jesse, I am trying to get into the tech industry. I have a background in digital
+                media. I'm currently enrolled at Epicodus programming school where I'm learning front
+                end techniques, Advanced Javascript and React. You can check out all my work in the <a
+                    href="work.html">work</a> section.
+            </p>
+            <p>
+                <h3>FIND ME ON THE WEB</h3>
+                Here is my <a href="https://www.linkedin.com/in/jessetylercallahan">LinkedIn</a> page and my <a
+                    href="https://github.com/jessecallahan">GitHub</a>.
+                Follow me! I'll Follow back! I love meeting and
+                sharing with people.
+            </p>
+            <p>
+                <h3>CHECK OUT MY MEDIA PORTFOLIO</h3>
+                Here is my <a href="https://jessecallahanswork.wordpress.com/">link</a> to things I've done in
+                public
+                radio, film and animation.
+            </p>
+        </footer>
+    </div>
+</div>
 
 </html>
