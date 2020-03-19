@@ -1,4 +1,6 @@
 # Pizza Parlor
+{code} https://github.com/jessecallahan/Pizza-parlor</br>
+{webiste} https://jessecallahan.github.io/pizza-parlor/</br>
 
 Created 02.29.20</br>
 By _**Jesse Callahan**_</br>
