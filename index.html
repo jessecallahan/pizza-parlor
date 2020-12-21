@@ -2,127 +2,122 @@
 <html lang="en">
 
 <head>
-    <title>Jesse Callahan's Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesse Callahan's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <nav class=navy>
-        <div class="container">
-            <ul class="nav nav-tabs">
-                <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/">Home</a></li>
-                <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/contact.html">Contact</a></li>
-
-                <li class="active" class="dropdown">
-                    <a href="https://jessecallahan.github.io/Jesse-Portfolio/work.html" class="dropdown-toggle"
-                        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work.html">All Projects</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="https://jessecallahan.github.io/Pig-Dice/">Pig Dice</a></li>
-                        <li><a
-                                href="https://jessecallahan.github.io/Jesse-Portfolio/work/pandemicWork.html">Pandemic</a>
-                        </li>
-                        <li><a href="https://jessecallahan.github.io/pizza-parlor/">Pizza Parlor</a></li>
-                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/calculator.html">JS
-                                Calculator</a>
-                        </li>
-                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/color.html">Color Input</a>
-                        </li>
-                        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/beep.html">Beep Boop</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-
+  <!-- <nav class=navy>
     <div class="container">
-        <p class="work-description bg-warning" style="margin-top: 20px"> Here is a Pizza Parlor project I created. It is
-            a basic database where all the pizza objects or "orders" get stored into an array or an "order database".
-            You
-            can check out the github <a href="https://github.com/jessecallahan/Pizza-parlor" target="_blank">here</a>.
-            Try making an order!</p>
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Pizza Parlor<img width="10%" height="10%" src=" img/download.png"> </img> </h1>
-                <h2>Order:</h2>
-                <form id="new-order">
-                    <div class="form-group">
-                        <p>Name</p>
-                        <input type="text" class="form-control" id="new-name">
-                    </div>
-                    <div>
-                        <p>Size</p>
-                    </div>
+      <ul class="nav nav-tabs">
+        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/">Home</a></li>
+        <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/contact.html">Contact</a></li>
 
-                    <label class="radio-inline">
-                        <input type="radio" name="size" value="L" checked>Large ($20)
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="size" value="M">Medium ($15)
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="size" value="S">Small ($8)
-                    </label>
-
-                    <br></br>
-                    <p>Toppings ($1 each)</p>
-                    <ul class="checkbox-grid">
-                        <li><input type="checkbox" name="toppings" value=" Pepperoni" /><label
-                                for="text1">Pepperoni</label>
-                        </li>
-                        <li><input type="checkbox" name="toppings" value=" Sausage" /><label for="text2">Sausage</label>
-                        </li>
-                        <li><input type="checkbox" name="toppings" value=" Candian Bacon" /><label for="text3">Canadian
-                                Bacon</label></li>
-                        <li><input type="checkbox" name="toppings" value=" Anchovies" /><label for="text4">Anchovies
-                            </label></li>
-                        <li><input type="checkbox" name="toppings" value=" Mushrooms" /><label
-                                for="text5">Mushrooms</label>
-                        </li>
-                        <li><input type="checkbox" name="toppings" value=" Green Peppers " /><label for="text6">Green
-                                Peppers</label></li>
-                        <li><input type="checkbox" name="toppings" value=" Black
-                                Olives" /><label for="text7">Black
-                                Olives</label>
-                        </li>
-                        <li><input type="checkbox" name="toppings" value=" Artichokes" /><label
-                                for="text8">Artichokes</label>
-                        </li>
-                        <li><input type="checkbox" name="toppings" value=" Pineapple" /><label
-                                for="text8">Pineapple</label>
-                        </li>
-
-                    </ul>
-
-
-
-                    <button style="margin: 20px" type="submit" class="btn-primary">Complete Order</button>
-                </form>
-                <hr>
-
-
-            </div>
-            <div class="col-md-6">
-                <h2>Orders:</h2>
-                <ul id="output">
-            </div>
-        </div>
+        <li class="active" class="dropdown">
+          <a href="https://jessecallahan.github.io/Jesse-Portfolio/work.html" class="dropdown-toggle"
+            data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work.html">All Projects</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://jessecallahan.github.io/Pig-Dice/">Pig Dice</a></li>
+            <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/pandemicWork.html">Pandemic</a>
+            </li>
+            <li><a href="https://jessecallahan.github.io/pizza-parlor/">Pizza Parlor</a></li>
+            <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/calculator.html">JS
+                Calculator</a>
+            </li>
+            <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/color.html">Color Input</a>
+            </li>
+            <li><a href="https://jessecallahan.github.io/Jesse-Portfolio/work/beep.html">Beep Boop</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
+  </nav> -->
+
+
+
+  <div class="container">
+    <p class="work-description bg-warning" style="margin-top: 20px"> Here is a Pizza Parlor project I created. It is
+      a basic database where all the pizza objects or "orders" get stored into an array or an "order database".
+      You
+      can check out the github <a href="https://github.com/jessecallahan/Pizza-parlor" target="_blank">here</a>.
+      Try making an order!</p>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Pizza Parlor<img width="10%" height="10%" src=" img/download.png"> </img> </h1>
+        <h2>Order:</h2>
+        <form id="new-order">
+          <div class="form-group">
+            <p>Name</p>
+            <input type="text" class="form-control" id="new-name">
+          </div>
+          <div>
+            <p>Size</p>
+          </div>
+
+          <label class="radio-inline">
+            <input type="radio" name="size" value="L" checked>Large ($20)
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="size" value="M">Medium ($15)
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="size" value="S">Small ($8)
+          </label>
+
+          <br></br>
+          <p>Toppings ($1 each)</p>
+          <ul class="checkbox-grid">
+            <li><input type="checkbox" name="toppings" value=" Pepperoni" /><label for="text1">Pepperoni</label>
+            </li>
+            <li><input type="checkbox" name="toppings" value=" Sausage" /><label for="text2">Sausage</label>
+            </li>
+            <li><input type="checkbox" name="toppings" value=" Candian Bacon" /><label for="text3">Canadian
+                Bacon</label></li>
+            <li><input type="checkbox" name="toppings" value=" Anchovies" /><label for="text4">Anchovies
+              </label></li>
+            <li><input type="checkbox" name="toppings" value=" Mushrooms" /><label for="text5">Mushrooms</label>
+            </li>
+            <li><input type="checkbox" name="toppings" value=" Green Peppers " /><label for="text6">Green
+                Peppers</label></li>
+            <li><input type="checkbox" name="toppings" value=" Black
+                                Olives" /><label for="text7">Black
+                Olives</label>
+            </li>
+            <li><input type="checkbox" name="toppings" value=" Artichokes" /><label for="text8">Artichokes</label>
+            </li>
+            <li><input type="checkbox" name="toppings" value=" Pineapple" /><label for="text8">Pineapple</label>
+            </li>
+
+          </ul>
+
+
+
+          <button style="margin: 20px" type="submit" class="btn-primary">Complete Order</button>
+        </form>
+        <hr>
+
+
+      </div>
+      <div class="col-md-6">
+        <h2>Orders:</h2>
+        <ul id="output">
+      </div>
+    </div>
+  </div>
+
 </body>
-<div class="footer">
+<!-- <div class="footer">
     <div class="container text-center">
         <footer>
             <p>
@@ -147,6 +142,6 @@
             </p>
         </footer>
     </div>
-</div>
+</div> -->
 
 </html>
